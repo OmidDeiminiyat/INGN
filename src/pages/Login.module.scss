@@ -1,0 +1,29 @@
+@import './../helper/fonts.scss';
+@import './../helper/colors.scss';
+.login{
+    position: absolute;
+    width: 40%;
+    margin-left: 30%;
+    background-color: $link;
+    h1{
+        color: white;
+        text-align: center;
+    }
+   form{
+    input{
+        position: relative;
+        max-width: 60%;
+        margin-left: 20%;
+        border: none;
+        border-radius: 15px;
+    }
+    button{
+        width: 30%;
+        border: none;
+        margin: 6% 0 5% 35%;
+        border-radius: 15px;
+        background-color: $button
+    }
+   }
+
+}
