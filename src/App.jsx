@@ -11,8 +11,6 @@ import { NotFound } from './pages/NoPage';
 import { Footer } from './components/Navigation/footer/Footer';
 
 
-
-// Apollo Client Setup
 const client = new ApolloClient({
   uri: 'https://eu-west-2.cdn.hygraph.com/content/cm1kc5um9021e07w68dz5uhr0/master',
   cache: new InMemoryCache(),

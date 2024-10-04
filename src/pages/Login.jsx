@@ -5,7 +5,6 @@ export const Login = ({ open, handleClose }) => {
     const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -20,11 +19,12 @@ export const Login = ({ open, handleClose }) => {
     console.log('Submitted Password:', password);
 
   };
+
   
   return (
-    <div open={open} onClose={handleClose} className={style.login} >
+    <div open={open} className={style.login} >
+       <div onClose={handleClose} className={style.closeForm}>X</div>
       <h1>Login Admin</h1>
-       
       <form onSubmit={handleSubmit}>
         {/* Email Input */}
         <div style={{ marginBottom: '10px' }}>
